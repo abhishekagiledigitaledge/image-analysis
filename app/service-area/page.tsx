@@ -145,6 +145,35 @@ const townColumns = [
   serviceAreaTowns.slice(townsPerColumn * 3),
 ]
 
+export const metadata = {
+  title: "Granite & Quartz Countertop Services Near Me | Stone Concepts",
+  description:
+    "Stone Concepts proudly serves over 140 communities across Eastern and Central Massachusetts with expert granite and quartz countertop fabrication and installation.",
+  keywords:
+    "stone concepts service area, countertop installation Massachusetts, granite installation, quartz countertops, kitchen remodel MA, Worcester, Lexington, Newton, Framingham, Waltham",
+  openGraph: {
+    title: "Granite & Quartz Countertop Services Near Me | Stone Concepts",
+    description:
+    "Stone Concepts proudly serves over 140 communities across Eastern and Central Massachusetts with expert granite and quartz countertop fabrication and installation.",
+    url: "https://stoneconcepts.net/service-area",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://stoneconcepts.net/images/quartzite-island-newton.webp",
+        width: 1200,
+        height: 630,
+        alt: "Stone Concepts Service Area - Massachusetts Countertop Installations",
+      },
+    ],
+  },
+  robots: "index, follow",
+   alternates: {
+    canonical: "https://stoneconcepts.net/service-area",
+  },
+}
+
+
 export default function ServiceAreaPage() {
   return (
     <div className="flex flex-col">

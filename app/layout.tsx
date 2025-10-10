@@ -15,20 +15,20 @@ const fontSans = FontSans({
 
 // Update metadata with more image-friendly configurations
 export const metadata: Metadata = {
-  title: "Stone Concepts - Affordable Luxury Countertops",
+  title: "Granite & Quartz Countertops Installation | Stone Concepts",
   description:
-    "Get high-end countertops without the showroom markup. Expert guidance, precision layout previews, and quality installation.",
+    "Upgrade your kitchen with affordable luxury granite and quartz countertops. Expert fabrication and installation across Massachusetts by Stone Concepts.",
   keywords: "countertops, granite, quartz, quartzite, kitchen remodel, stone installation, Massachusetts",
   viewport: "width=device-width, initial-scale=1, viewport-fit=cover",
   robots: "index, follow",
   openGraph: {
-    title: "Stone Concepts - Affordable Luxury Countertops",
+    title: "Granite & Quartz Countertops Installation | Stone Concepts",
     description:
-      "Get high-end countertops without the showroom markup. Expert guidance, precision layout previews, and quality installation.",
+      "Upgrade your kitchen with affordable luxury granite and quartz countertops. Expert fabrication and installation across Massachusetts by Stone Concepts.",
     type: "website",
     locale: "en_US",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({

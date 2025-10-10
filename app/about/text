@@ -1,0 +1,30 @@
+export const metadata = {
+  title: "Gallery | Stone Concepts",
+  description:
+    "Explore the Stone Concepts gallery to see our completed projects featuring luxury quartz, granite, and marble countertops across Massachusetts.",
+  keywords:
+    "stone concepts gallery, countertop projects, quartz countertops, granite countertops, marble designs, Massachusetts stone installation",
+  openGraph: {
+    title: "Gallery | Stone Concepts",
+    description:
+      "Browse stunning countertop installations by Stone Concepts. Discover inspiration for your next project with our curated gallery.",
+    url: "https://stoneconcepts.net/gallery",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://stoneconcepts.net/images/quartzite-island-newton.webp",
+        width: 1200,
+        height: 630,
+        alt: "Stone Concepts Gallery - Quartzite Island",
+      },
+    ],
+  },
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://stoneconcepts.net/gallery",
+  },
+}
+
+
+

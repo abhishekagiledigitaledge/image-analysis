@@ -76,6 +76,35 @@ const testimonials = [
   },
 ]
 
+export const metadata = {
+  title: "Customer Reviews and Testimonials | Stone Concepts",
+  description:
+    "Read customer testimonials for Stone Concepts’ granite and quartz countertop installations in Massachusetts. Learn why homeowners trust our expert services.",
+  keywords:
+    "stone concepts reviews, countertop testimonials, granite installation Massachusetts, quartz countertops feedback, kitchen remodel MA, stone installation reviews",
+  openGraph: {
+    title: "Customer Reviews and Testimonials | Stone Concepts",
+    description:
+      "Read customer testimonials for Stone Concepts’ granite and quartz countertop installations in Massachusetts. Learn why homeowners trust our expert services.",
+    url: "https://stoneconcepts.net/testimonials",
+    type: "website",
+    locale: "en_US",
+    images: [
+      {
+        url: "https://stoneconcepts.net/images/quartzite-island-west-newton.webp",
+        width: 1200,
+        height: 630,
+        alt: "Stone Concepts Client Testimonials - Countertop Installation Massachusetts",
+      },
+    ],
+  },
+  robots: "index, follow",
+   alternates: {
+    canonical: "https://stoneconcepts.net/testimonials",
+  },
+}
+
+
 export default function TestimonialsPage() {
   return (
     <div className="flex flex-col">
