@@ -91,10 +91,10 @@ export function Footer() {
           &copy; {new Date().getFullYear()} Stone Concepts, Inc. All rights reserved.
         </div>
         <div className="mt-4 text-sm text-gray-400 md:mt-0 flex gap-4">
-          <Link href="/" className="hover:text-gray-300">
+          <Link href="/privacy" className="hover:text-gray-300">
             Privacy Policy
           </Link>
-          <Link href="/" className="hover:text-gray-300">
+          <Link href="/term-condition" className="hover:text-gray-300">
             Terms of Service
           </Link>
         </div>

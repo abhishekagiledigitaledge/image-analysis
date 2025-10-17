@@ -302,11 +302,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <iframe 
-  src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE" 
-  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE"
+        width="600"
+        height="450"
+        style={{border:0}}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        allow="fullscreen"
+        >
+      </iframe>
     </div>
   )
 }
