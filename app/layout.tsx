@@ -31,6 +31,36 @@ export const metadata: Metadata = {
   generator: 'v0.app'
 }
 
+// Organization schema (JSON-LD)
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Stone Concepts, Inc.",
+  "url": "https://www.stoneconcepts.net/",
+  "logo": "https://www.stoneconcepts.net/images/stone-concepts-logo.png",
+  "sameAs": [
+    "https://www.facebook.com/StoneConceptsGranite/",
+    "https://x.com/IncConcept22776",
+    "https://www.instagram.com/stoneconcepts_inc/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-978-568-1911",
+    "contactType": "Customer Service",
+    "areaServed": "US",
+    "availableLanguage": ["English"]
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10 Technology Dr, Unit 40",
+    "addressLocality": "Hudson",
+    "addressRegion": "MA",
+    "postalCode": "01749",
+    "addressCountry": "US"
+  },
+  "description": "Get high-end countertops without the showroom markup. Expert guidance, precision layout previews, and quality installation."
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,7 +68,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>{/* No external lightbox libraries needed */}</head>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        {/* No external lightbox libraries needed */}
+      </head>
       <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">

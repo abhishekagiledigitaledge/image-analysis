@@ -307,6 +307,7 @@ export default function Home() {
         width="600"
         height="450"
         style={{border:0}}
+        className="!w-[100%]"
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         allow="fullscreen"
