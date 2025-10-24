@@ -13,11 +13,13 @@ import { Label } from "@/components/ui/label"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Textarea } from "@/components/ui/textarea"
 import { useToast } from "@/hooks/use-toast"
+import { useRouter } from "next/navigation"
 
 
 
 export default function ContactPage() {
   const { toast } = useToast()
+  const router = useRouter()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,7 +46,7 @@ export default function ContactPage() {
     setError("")
 
     try {
-      console.log("Submitting form data:", formData)
+      // console.log("Submitting form data:", formData)
 
       const response = await fetch("/api/contact", {
         method: "POST",
@@ -54,10 +56,10 @@ export default function ContactPage() {
         body: JSON.stringify(formData),
       })
 
-      console.log("Response status:", response.status)
+      // console.log("Response status:", response.status)
 
       const responseData = await response.json()
-      console.log("Response data:", responseData)
+      // console.log("Response data:", responseData)
 
       if (!response.ok) {
         throw new Error(responseData.error || "Something went wrong")
@@ -71,6 +73,9 @@ export default function ContactPage() {
         title: "Quote Request Submitted",
         description: "We'll be in touch with you shortly!",
       })
+
+      // Redirect immediately to thank-you page
+      router.push("/thank-you")
 
       // Reset form after 3 seconds
       setTimeout(() => {
@@ -102,13 +107,13 @@ export default function ContactPage() {
   const generateMailtoLink = () => {
     const subject = encodeURIComponent("Quote Request from Website")
     const body = encodeURIComponent(`
-Name: ${formData.name}
-Email: ${formData.email}
-Phone: ${formData.phone || "Not provided"}
-Customer Type: ${formData.customerType === "homeowner" ? "Homeowner" : "Contractor"}
+        Name: ${formData.name}
+        Email: ${formData.email}
+        Phone: ${formData.phone || "Not provided"}
+        Customer Type: ${formData.customerType === "homeowner" ? "Homeowner" : "Contractor"}
 
-Message:
-${formData.message}
+        Message:
+        ${formData.message}
     `)
 
     return `mailto:bill@stoneconcepts.net?subject=${subject}&body=${body}`
