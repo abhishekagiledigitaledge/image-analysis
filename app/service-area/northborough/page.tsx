@@ -196,7 +196,7 @@ export default function ServiceAreaPage() {
                         </div>
                     </div>
                     <div className="mt-12 px-20">
-                        <h3>Where Marble Shines:</h3>
+                        <h3 className="font-semibold">Where Marble Shines:</h3>
                         <ul className="mt-6 list-disc list-inside text-gray-600  mb-4">
                             <li className="mt-4">	Bathroom vanities that feel like a spa retreat</li>
                             <li className="mt-2 ">	Decorative islands that become conversation pieces</li>
@@ -205,7 +205,7 @@ export default function ServiceAreaPage() {
 
                         </ul>
 
-                        <h3>The Honest Truth About Marble:</h3>
+                        <h3 className="font-semibold">The Honest Truth About Marble:</h3>
                         <p className="text-gray-600 leading-relaxed mt-6">
                             It's softer than granite. It can etch from acidic liquids like lemon juice or wine. It requires periodic sealing and thoughtful care.
                         </p>
@@ -393,40 +393,40 @@ export default function ServiceAreaPage() {
                     <h3 className="text-xl font-bold text-gray-800">A Team That Actually Communicates</h3>
                     <p className="text-gray-600 leading-relaxed mt-2 mb-6">We answer our phones. We show up when promised. We keep you informed at every step. Revolutionary? No. Rare in this industry? Unfortunately, yes.
                     </p>
-                   <h3 className="text-xl font-bold text-gray-800">100% Satisfaction Guarantee</h3>
+                    <h3 className="text-xl font-bold text-gray-800">100% Satisfaction Guarantee</h3>
                     <p className="text-gray-600 leading-relaxed mt-2 mb-6">We don't consider the job done until you're thrilled with the result. Tight seams, precise cutouts, clean edges, and a polished final product aren't goals—they're guarantees.
                     </p>
                 </div>
             </section>
 
- <section className="bg-white py-16">
+            <section className="bg-white py-16">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row items-center md:space-x-8">
 
                         {/* Left Content */}
                         <div className="md:w-1/2 space-y-6">
                             <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-                               Stop Living with Countertops You Apologize For
+                                Stop Living with Countertops You Apologize For
                             </h1>
                             <p className="text-gray-600 leading-relaxed">
-                               Every week you delay is another week of wiping down surfaces that never look quite right. Another dinner party where you catch yourself explaining, "We're planning to renovate eventually." Another year of living in a kitchen that doesn't match the home you've built.
+                                Every week you delay is another week of wiping down surfaces that never look quite right. Another dinner party where you catch yourself explaining, "We're planning to renovate eventually." Another year of living in a kitchen that doesn't match the home you've built.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                               Whether you need durable granite countertops in Northborough, elegant marble countertops in Northborough, or modern quartz surfaces installed by expert quartz installers near Northborough, Stone Concepts transforms your vision into reality.
+                                Whether you need durable granite countertops in Northborough, elegant marble countertops in Northborough, or modern quartz surfaces installed by expert quartz installers near Northborough, Stone Concepts transforms your vision into reality.
                             </p>
-                             <p className="text-gray-600 leading-relaxed">
-                               We handle every detail from selection through installation so you can focus on planning that first dinner party in your transformed kitchen.
+                            <p className="text-gray-600 leading-relaxed">
+                                We handle every detail from selection through installation so you can focus on planning that first dinner party in your transformed kitchen.
                             </p>
 
                             <h3 className="font-semibold">Contact us today for your free consultation and quote.</h3>
 
-                           
+
 
                             <p className="text-gray-600 leading-relaxed">
                                 Let's create something beautiful together.
 
                             </p>
-            
+
                         </div>
 
 
@@ -438,7 +438,7 @@ export default function ServiceAreaPage() {
                                 height={400}
                                 className=" w-full object-cover"
                             />
-                   
+
                         </div>
                     </div>
                 </div>

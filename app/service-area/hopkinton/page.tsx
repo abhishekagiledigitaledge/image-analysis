@@ -177,30 +177,48 @@ export default function ServiceAreaPage() {
 
                         </div>
                     </div>
-                    <div className="mt-12 px-20">
-                        <h3>Where Marble Shines:</h3>
-                        <ul className="mt-6 list-disc list-inside text-gray-600  mb-4">
-                            <li className="mt-4">	Bathroom vanities that feel like a spa retreat</li>
-                            <li className="mt-2 ">	Decorative islands that become conversation pieces</li>
-                            <li className="mt-2 ">	Baking stations (marble's naturally cool surface is perfect for pastry work)</li>
-                            <li className="mt-2 ">	Powder rooms where elegance matters more than durability</li>
+                </div>
+            </section>
 
-                        </ul>
+             <section className="pb-16">
+                <div className=" mx-auto px-4 sm:px-6 lg:px-8">
 
-                        <h3>The Honest Truth About Marble:</h3>
-                        <p className="text-gray-600 leading-relaxed mt-6">
-                            It's softer than granite. It can etch from acidic liquids like lemon juice or wine. It requires periodic sealing and thoughtful care.
-                        </p>
-                        <p className="text-gray-600 leading-relaxed mt-2">
-                            But here's what marble owners tell us: "I don't regret it for a second."
-                        </p>
-                        <p className="text-gray-600 leading-relaxed mt-2">
-                            When we install marble countertops in Northborough, we treat them with the craftsmanship they deserve. Precise cuts. Seamless joins. Expert sealing. And guidance on maintenance that keeps your marble looking beautiful for decades.
-                        </p>
-                        <p className="text-gray-600 leading-relaxed mt-2">
-                            If you're seeking sophistication that makes a statement, marble delivers.
-                        </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
+
+                        <div className="relative">
+                            <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Marble: The Luxury Statement</h3>
+                                <p className="text-gray-600 leading-relaxed mb-4">
+                                   Perfect for bathroom vanities, decorative islands, or spaces where beauty trumps heavy-duty use. Marble offers that luminous finish and sophisticated veining that no other stone replicates. Yes, it requires more care than granite. But marble owners consistently tell us, "I'd make the same choice again in a heartbeat."
+                                </p>
+                            
+                            </div>
+                        </div>
+
+                        <div className="relative">
+                            <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                             
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Quartzite: Nature's Workhorse</h3>
+                                <p className="text-gray-600 leading-relaxed mb-4">
+                                   Think of quartzite as granite's tougher cousin. Natural beauty with extreme durability. Heat-resistant. Scratch-resistant. Low-maintenance. One Hopkinton family told us their quartzite countertops "survived three teenagers and still look brand new five years later."</p>
+                            </div>
+                        </div>
+
+                        <div className="relative ">
+                            <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                              
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Soapstone: The Understated Classic</h3>
+                                <p className="text-gray-600 leading-relaxed mb-4">
+                                   Smooth, matte finish. Naturally non-porous (no sealing required). Develops a rich patina over time. Perfect for farmhouse or traditional kitchens where you want character, not shine.
+                                </p>
+                            </div>
+                        </div>
                     </div>
+
+                    <div className="text-center mt-8">
+                        <p className="text-gray-600 leading-relaxed">Each stone has its personality. We help you find the one that matches yours.</p>
+                    </div>
+                    
                 </div>
             </section>
 
@@ -288,14 +306,13 @@ export default function ServiceAreaPage() {
 
                         <div className="relative">
                             <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
-                                <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
+                                <div className=" flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                     <span className="text-2xl font-bold text-white">1</span>
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Free Consultation & Precise Measurement</h3>
                                 <p className="text-gray-600 leading-relaxed mb-4">
                                     We have a call about your Hopkinton home and we actually listen. How do you use your kitchen? Do you bake regularly? Do kids do homework at the island? Do you entertain often? Your answers shape which stone we recommend—not our profit margin. We take precise measurements of your space, discuss timeline and budget openly, and answer every question honestly.
                                 </p>
-                            
                             </div>
                         </div>
 
@@ -402,3 +419,7 @@ export default function ServiceAreaPage() {
         </div>
     )
 }
+
+
+
+
