@@ -1,8 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, MapPin, Phone, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import FaqComponent from "@/components/faqComponent"
 
 const blogs = [
     {
@@ -27,10 +24,31 @@ const blogs = [
     },
 ];
 
-
-
-
 export default function ServiceAreaPage() {
+
+    const nycFaqs = [
+        {
+            question: "What are the negatives of quartz countertops?",
+            answer:
+                "We believe in honest advice, so here's the truth: Quartz costs more upfront than laminate or tile (though it's comparable to mid-range granite). It can't handle extreme direct heat—set a 500-degree pan directly on quartz and you might get a mark, so use trivets for safety. Also, quartz is best for indoor use; UV exposure can cause discoloration over time, so it's not ideal for outdoor kitchens. Finally, it's not a DIY-friendly material due to weight and precision required for cutting. But here's what quartz owners tell us: 'The lack of maintenance makes it worth every penny.' No sealing. No staining. No etching. Just clean and go.",
+        },
+        {
+            question: "Are quartz countertops dishwashing soap safe?",
+            answer:
+                "Absolutely. Mild dish soap and water is the recommended cleaning method for quartz. No special cleaners needed. No sealing required. Just regular soap, a soft cloth, and you're done. It's one of the reasons busy Northborough families love quartz—there's no complicated maintenance routine to remember.",
+        },
+        {
+            question: "Which is better, quartz or marble worktops?",
+            answer:
+                "The honest answer? It depends on where you're installing it and what you value most. Marble wins on pure aesthetics—nothing looks quite like Calacatta marble. But it scratches more easily, etches from acidic liquids, and requires periodic sealing. Quartz wins on practicality—it's virtually indestructible for daily use and needs zero maintenance. Here's our recommendation: Use marble in bathrooms, powder rooms, or decorative islands where beauty matters more than durability. Use quartz in busy kitchens, family spaces, or anywhere that gets heavy use. We'll never push you toward the most expensive option—we'll push you toward the right option for your lifestyle.",
+        },
+        {
+            question: "Do you provide countertop installers in Northborough, MA?",
+            answer:
+                "Yes—installation is included when you order countertops through us, not an added expense. Here's how it works: Once you select your stone and we fabricate your countertops off-site, our expert installers schedule a convenient time to come to your Northborough home. They arrive with all necessary tools and materials, install your countertops with precision, clean up completely, and walk you through any care instructions before leaving. Most installations take just one day. You're not hiring a separate installer and hoping they communicate with the fabricator—we handle everything under one roof for a seamless experience from start to finish.",
+        },
+    ];
+
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
@@ -443,6 +461,8 @@ export default function ServiceAreaPage() {
                     </div>
                 </div>
             </section>
+
+            <FaqComponent nycFaqs={nycFaqs} />
 
         </div>
     )

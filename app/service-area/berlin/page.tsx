@@ -1,6 +1,5 @@
-
 import Image from "next/image"
-
+import FaqComponent from "@/components/faqComponent"
 
 const blogs = [
     {
@@ -26,9 +25,33 @@ const blogs = [
 ];
 
 
-
-
 export default function ServiceAreaPage() {
+
+    const faqs = [
+        {
+            question: "Can a hot pan go on a granite countertop?",
+            answer:
+                "We get this question constantly—usually right after someone's seen their friend's countertop develop a heat mark. Here's the truth: Yes, granite handles heat. But we always recommend using a trivet. ",
+        },
+        {
+            question: "Which is more expensive, quartz or marble?",
+            answer:
+                "Marble typically costs more upfront and requires more maintenance over time (periodic sealing, careful cleaning). Quartz costs less initially and requires almost zero maintenance. But here's what matters more than price: which one fits your lifestyle? If you love the natural variation of marble and don't mind a little upkeep, it's worth every penny. If you want set-it-and-forget-it performance, quartz delivers incredible value."
+        },
+
+        {
+            question: "Who offers the best stone countertops in Berlin, MA?",
+            answer:
+                "We're obviously biased, but here's what our Berlin clients say: Stone Concepts offers the widest selection of materials in the area, complete guidance from selection through installation, and installers who show up when promised. We've completed many local projects and seen every possible layout challenge Berlin homes present. Check our reviews, talk to neighbors who've worked with us, and decide for yourself."
+        },
+        {
+            question: "What is the downside of granite countertops?",
+            answer:
+                "Granite requires periodic sealing (every 1-2 years depending on the stone)—that's about 15 minutes of effort annually. It's also heavy, which matters during installation but not after. The reality? For most Berlin homeowners, granite's combination of durability, beauty, and heat resistance makes it the ideal choice despite the minimal maintenance."
+        },
+
+    ]
+
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
@@ -175,7 +198,7 @@ export default function ServiceAreaPage() {
 
             <section className="pb-16">
                 <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                     <h3 className="text-4xl font-bold text-gray-900 mb-8 text-center">Which Stone Is Right for Your Space?</h3>
+                    <h3 className="text-4xl font-bold text-gray-900 mb-8 text-center">Which Stone Is Right for Your Space?</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
 
                         <div className="relative">
@@ -228,7 +251,7 @@ export default function ServiceAreaPage() {
                 </div>
             </section>
 
-        
+
             <section className="py-16 ">
                 <div className=" mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -267,7 +290,7 @@ export default function ServiceAreaPage() {
                                     </li>
                                 </ul>
                                 <p className="text-gray-600  mt-4">
-                                    The answers shape which stone we recommend. 
+                                    The answers shape which stone we recommend.
                                 </p>
                             </div>
                         </div>
@@ -369,6 +392,8 @@ export default function ServiceAreaPage() {
                     </div>
                 </div>
             </section>
+
+            <FaqComponent nycFaqs={faqs} />
 
         </div>
     )

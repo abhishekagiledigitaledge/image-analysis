@@ -1,8 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, MapPin, Phone, Mail } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import FaqComponent from "@/components/faqComponent"
 
 const blogs = [
     {
@@ -27,10 +24,32 @@ const blogs = [
     },
 ];
 
-
-
-
 export default function ServiceAreaPage() {
+
+    const faqs = [
+        {
+            question: "Can you put hot pans on granite countertops?",
+            answer:
+                "Yes, granite is naturally heat-resistant and can handle brief contact with hot pans without damage. However, we still recommend using trivets or hot pads as a best practice—not because granite will immediately crack, but because extreme, prolonged direct heat (like a 500-degree pan sitting in one spot for minutes) could potentially cause thermal shock in rare cases. Think of it this way: granite can handle it, but why risk it when a $5 trivet gives you complete peace of mind? The real advantage is that if you occasionally forget and set down a hot pot, your granite won't show a burn mark like laminate would.",
+        },
+        {
+            question: "How often do granite countertops need to be sealed?",
+            answer:
+                "Most granite countertops need sealing every 12-24 months, though this varies by stone type—some dense granites need it annually, while more porous varieties might need it twice a year. Here's the good news: sealing takes about 15 minutes and costs around $20 for a DIY bottle of sealer. That's the entire 'maintenance' people worry about. We show you how to do it during installation, and we're always available if you have questions. Many of our Hopkinton clients tell us, 'I thought maintenance would be a hassle, but it's literally easier than cleaning my oven.' We also test your granite during installation and let you know exactly how often your specific stone will need sealing."
+        },
+        {
+            question: "Which is more expensive, granite or quartz countertops?",
+            answer:
+                "It depends on the specific materials you're comparing, but generally, mid-range granite and mid-range quartz cost roughly the same. Here's the real question: which offers better value for your situation? Granite requires periodic sealing but offers unique natural patterns—no two slabs are identical. Quartz requires zero maintenance but has more uniform patterns. For busy Hopkinton families who want set-it-and-forget-it performance, quartz often delivers better long-term value despite similar upfront costs. For Hopkinton homeowners who love natural stone's organic beauty and don't mind 15 minutes of sealing once a year, granite is worth every penny. We'll never push you toward the more expensive option—we'll push you toward the right option for your lifestyle and budget.",
+        },
+        {
+            question: "Does quartz stain easily?",
+            answer:
+                "High-quality quartz (which is all we install) is highly stain-resistant, not stain-proof—there's a difference. Here's what that means in real life: Coffee, wine, tomato sauce, oil—normal kitchen spills wipe right up, even if they sit for a few hours. Where quartz can potentially stain is from things like permanent markers, hair dye, or strong chemical solvents left on the surface for extended periods. A Hopkinton client once asked us, 'What if my kids use markers on it?' We told her, 'Wipe it up within a day or two and you're fine. Let Sharpie sit for a week and you might have an issue.' After three years with three kids, she reports zero stains. The key? Quartz is incredibly forgiving for normal daily use, which is why busy families love it.",
+        },
+
+    ];
+
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
@@ -128,7 +147,7 @@ export default function ServiceAreaPage() {
                         {blogs.map((blog) => (
                             <li
                                 key={blog.id}
-                                className="border border-[2px] border-gray-700 border-dashed  p-6 flex flex-col"
+                                className="border border-gray-700 border-dashed  p-6 flex flex-col"
                             >
 
                                 <div className="flex flex-col justify-between flex-grow">
@@ -180,7 +199,7 @@ export default function ServiceAreaPage() {
                 </div>
             </section>
 
-             <section className="pb-16">
+            <section className="pb-16">
                 <div className=" mx-auto px-4 sm:px-6 lg:px-8">
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
@@ -189,27 +208,27 @@ export default function ServiceAreaPage() {
                             <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Marble: The Luxury Statement</h3>
                                 <p className="text-gray-600 leading-relaxed mb-4">
-                                   Perfect for bathroom vanities, decorative islands, or spaces where beauty trumps heavy-duty use. Marble offers that luminous finish and sophisticated veining that no other stone replicates. Yes, it requires more care than granite. But marble owners consistently tell us, "I'd make the same choice again in a heartbeat."
+                                    Perfect for bathroom vanities, decorative islands, or spaces where beauty trumps heavy-duty use. Marble offers that luminous finish and sophisticated veining that no other stone replicates. Yes, it requires more care than granite. But marble owners consistently tell us, "I'd make the same choice again in a heartbeat."
                                 </p>
-                            
+
                             </div>
                         </div>
 
                         <div className="relative">
                             <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
-                             
+
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Quartzite: Nature's Workhorse</h3>
                                 <p className="text-gray-600 leading-relaxed mb-4">
-                                   Think of quartzite as granite's tougher cousin. Natural beauty with extreme durability. Heat-resistant. Scratch-resistant. Low-maintenance. One Hopkinton family told us their quartzite countertops "survived three teenagers and still look brand new five years later."</p>
+                                    Think of quartzite as granite's tougher cousin. Natural beauty with extreme durability. Heat-resistant. Scratch-resistant. Low-maintenance. One Hopkinton family told us their quartzite countertops "survived three teenagers and still look brand new five years later."</p>
                             </div>
                         </div>
 
                         <div className="relative ">
                             <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
-                              
+
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Soapstone: The Understated Classic</h3>
                                 <p className="text-gray-600 leading-relaxed mb-4">
-                                   Smooth, matte finish. Naturally non-porous (no sealing required). Develops a rich patina over time. Perfect for farmhouse or traditional kitchens where you want character, not shine.
+                                    Smooth, matte finish. Naturally non-porous (no sealing required). Develops a rich patina over time. Perfect for farmhouse or traditional kitchens where you want character, not shine.
                                 </p>
                             </div>
                         </div>
@@ -218,7 +237,7 @@ export default function ServiceAreaPage() {
                     <div className="text-center mt-8">
                         <p className="text-gray-600 leading-relaxed">Each stone has its personality. We help you find the one that matches yours.</p>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -295,10 +314,10 @@ export default function ServiceAreaPage() {
 
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                           Our 3-Step Process: From First Meeting to Finished Kitchen in Weeks
+                            Our 3-Step Process: From First Meeting to Finished Kitchen in Weeks
                         </h2>
                         <p className="text-sm tracking-widest text-gray-600 font-medium mt-2">
-                          Getting new stone countertops in Hopkinton, MA shouldn't mean living in construction limbo for months. We've streamlined everything so the process is enjoyable instead of stressful.
+                            Getting new stone countertops in Hopkinton, MA shouldn't mean living in construction limbo for months. We've streamlined everything so the process is enjoyable instead of stressful.
                         </p>
                     </div>
 
@@ -334,7 +353,7 @@ export default function ServiceAreaPage() {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Professional Installation & Clean Finish</h3>
                                 <p className="text-gray-600 leading-relaxed mb-4">
-                                   Our installers arrive on schedule, fit your countertop with precision, seal if necessary (granite and some natural stones), clean up completely, and hand you a kitchen that's ready to use immediately. Most installations take just one day. You'll be making dinner on your new surface that same evening.
+                                    Our installers arrive on schedule, fit your countertop with precision, seal if necessary (granite and some natural stones), clean up completely, and hand you a kitchen that's ready to use immediately. Most installations take just one day. You'll be making dinner on your new surface that same evening.
                                 </p>
                             </div>
                         </div>
@@ -343,7 +362,7 @@ export default function ServiceAreaPage() {
                     <div className="text-center mt-8">
                         <p className="text-gray-600 leading-relaxed">No surprises. No excuses. No ghosting between steps.</p>
                     </div>
-                    
+
                 </div>
             </section>
 
@@ -352,12 +371,12 @@ export default function ServiceAreaPage() {
 
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-                           Why Hopkinton Homeowners Choose Stone Concepts
+                            Why Hopkinton Homeowners Choose Stone Concepts
                         </h2>
                     </div>
                     <h3 className="text-xl font-bold text-gray-800">Free Consultation in Hopkinton</h3>
                     <p className="text-gray-600 leading-relaxed mt-2 mb-6">
-                       We measure your space. We discuss your needs. No pressure. No obligation. Just honest guidance from people who've been doing this for decades.
+                        We measure your space. We discuss your needs. No pressure. No obligation. Just honest guidance from people who've been doing this for decades.
                     </p>
                     <h3 className="text-xl font-bold text-gray-800">A Showroom That Actually Helps</h3>
                     <p className="text-gray-600 leading-relaxed mt-2 mb-6"> We don't hand you a binder of photos and wish you luck. Our slab gallery displays hundreds of full granite and quartz slabs. You see the actual stone. You touch it. You compare options side-by-side. You make a confident choice.
@@ -384,19 +403,19 @@ export default function ServiceAreaPage() {
                                 Stop Settling for Countertops That Disappoint You
                             </h1>
                             <p className="text-gray-600 leading-relaxed">
-                               Every morning you wake up to those countertops is another day of settling for less than your home deserves. Another dinner party where you catch yourself apologizing for your kitchen. Another year of living with surfaces that make you cringe instead of smile.
+                                Every morning you wake up to those countertops is another day of settling for less than your home deserves. Another dinner party where you catch yourself apologizing for your kitchen. Another year of living with surfaces that make you cringe instead of smile.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                              Whether you need timeless granite countertops near Hopkinton, MA, modern quartz surfaces from expert quartz installers near Hopkinton, or elegant natural stone countertops in Hopkinton, MA, Stone Concepts transforms your vision into reality.
+                                Whether you need timeless granite countertops near Hopkinton, MA, modern quartz surfaces from expert quartz installers near Hopkinton, or elegant natural stone countertops in Hopkinton, MA, Stone Concepts transforms your vision into reality.
                             </p>
                             <p className="text-gray-600 leading-relaxed">
-                              We handle every detail from selection through installation, so you can focus on planning that first dinner party in your transformed kitchen.
+                                We handle every detail from selection through installation, so you can focus on planning that first dinner party in your transformed kitchen.
                             </p>
 
                             <h3 className="font-semibold">Call us today for your free consultation and quote.</h3>
 
                             <p className="text-gray-600 leading-relaxed">
-                               Let's create something you'll love for decades.
+                                Let's create something you'll love for decades.
                             </p>
 
                         </div>
@@ -415,6 +434,8 @@ export default function ServiceAreaPage() {
                     </div>
                 </div>
             </section>
+
+            <FaqComponent nycFaqs={faqs} />
 
         </div>
     )

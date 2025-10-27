@@ -1,4 +1,5 @@
 import Image from "next/image"
+import FaqComponent from "@/components/faqComponent"
 
 const blogs = [
     {
@@ -28,10 +29,32 @@ const blogs = [
     },
 ];
 
-
-
-
 export default function ServiceAreaPage() {
+
+    const faqs = [
+        {
+            question: "What are quartz countertops made of?",
+            answer:
+                "Quartz countertops are engineered stone made from 90–95% crushed natural quartz crystals combined with polymer resins, pigments, and sometimes recycled glass or mirror flecks. Here's what that means in real life: The quartz provides incredible hardness and durability. The resins bind everything together and create a non-porous surface (unlike natural stone, which has microscopic pores). The pigments allow for consistent color and pattern—you get exactly what you selected, with no surprises. The result is a surface that doesn't need sealing, resists stains and scratches, and comes in hundreds of color options that natural stone can't match. One Bolton client described it as 'all the benefits of stone without any of the hassle.'",
+        },
+        {
+            question: "Do granite countertops come in different color options?",
+            answer:
+                "Absolutely—granite offers an incredible range of naturally occurring colors. Light options like Colonial White and Kashmir White. Medium tones like Uba Tuba and Tan Brown. Dark dramatic options like Absolute Black and Blue Pearl. Exotic patterns with blues, greens, or reds. Here's what makes granite special: no two slabs are identical. Even within the same quarry batch, you'll see variation in veining, speckling, and color intensity. That's the beauty of natural stone—your countertop is truly one-of-a-kind. When you visit our showroom for granite countertops in Bolton, you're not choosing from a catalog—you're selecting the actual slab that will be cut and installed in your home. You see the exact veining pattern. The specific color variations. What you see is what you get.",
+        },
+        {
+            question: "Which is better, granite or quartz countertops?",
+            answer:
+                "The honest answer? Neither is universally 'better'—they're different tools for different needs. Granite is natural stone with unique patterns, excellent heat resistance, and character that develops over time. It requires periodic sealing (about 15 minutes once or twice a year). Quartz is engineered for consistent appearance, zero maintenance, and extreme stain resistance. It can't handle direct high heat as well as granite. Here's how we help Bolton clients decide: If you love natural materials, don't mind minimal maintenance, and want a one-of-a-kind surface, granite is extraordinary. If you want set-it-and-forget-it performance, consistent appearance, and maximum stain resistance, quartz is brilliant. Both are beautiful. Both are durable. Both will last decades. The 'better' choice depends entirely on your lifestyle and priorities. We'll never push you toward the more expensive option—we'll push you toward the right option for how you live.",
+        },
+        {
+            question: "Do you provide countertop installation in Bolton?",
+            answer:
+                "Yes—and installation is included as part of our complete service, not an extra charge you discover later. Here's how it works: Once you select your stone and we fabricate your countertops at our facility, our professional installers schedule a convenient time to come to your Bolton home. They arrive with all necessary tools and materials, install your countertops with precision, seal if needed (for granite and certain natural stones), clean up thoroughly, and walk you through any care instructions before leaving. Most installations take just one day. You're not coordinating between a stone supplier and a separate installer hoping they communicate properly—we handle everything under one roof for a seamless experience from consultation to completion. Our installers have decades of experience specifically with Bolton homes, so they understand the unique challenges of working in both historic properties and modern constructions.",
+        },
+    ];
+
+
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
@@ -451,51 +474,53 @@ export default function ServiceAreaPage() {
                 </div>
             </section>
 
-          <section className="bg-white py-16">
-  <div className="container mx-auto px-4">
-    <div className="flex flex-col md:flex-row items-center md:space-x-8">
+            <section className="bg-white py-16">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-col md:flex-row items-center md:space-x-8">
 
-      {/* Left Content */}
-      <div className="md:w-1/2 space-y-6">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
-          Stop Living with Countertops That Don't Measure Up
-        </h1>
+                        {/* Left Content */}
+                        <div className="md:w-1/2 space-y-6">
+                            <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+                                Stop Living with Countertops That Don't Measure Up
+                            </h1>
 
-        <p className="text-gray-600 leading-relaxed">
-          Every morning you wake up to those disappointing countertops is another day of settling for less than your home deserves. Another dinner party where you apologize for your kitchen instead of showcasing it. Another year of living with surfaces that make you cringe instead of smile.
-        </p>
+                            <p className="text-gray-600 leading-relaxed">
+                                Every morning you wake up to those disappointing countertops is another day of settling for less than your home deserves. Another dinner party where you apologize for your kitchen instead of showcasing it. Another year of living with surfaces that make you cringe instead of smile.
+                            </p>
 
-        <p className="text-gray-600 leading-relaxed">
-          Whether you need timeless granite countertops in Bolton, modern quartz surfaces from expert quartz installers near Bolton, or elegant natural stone countertops in Bolton, MA, Stone Concepts transforms your vision into reality.
-        </p>
+                            <p className="text-gray-600 leading-relaxed">
+                                Whether you need timeless granite countertops in Bolton, modern quartz surfaces from expert quartz installers near Bolton, or elegant natural stone countertops in Bolton, MA, Stone Concepts transforms your vision into reality.
+                            </p>
 
-        <p className="text-gray-600 leading-relaxed">
-          We handle every detail from selection through installation, so you can focus on planning that first dinner party in your transformed kitchen.
-        </p>
+                            <p className="text-gray-600 leading-relaxed">
+                                We handle every detail from selection through installation, so you can focus on planning that first dinner party in your transformed kitchen.
+                            </p>
 
-        <h3 className="font-semibold">
-          Call us today for your free consultation and quote.
-        </h3>
+                            <h3 className="font-semibold">
+                                Call us today for your free consultation and quote.
+                            </h3>
 
-        <p className="text-gray-600 leading-relaxed">
-          Let's create something you'll love for decades.
-        </p>
-      </div>
+                            <p className="text-gray-600 leading-relaxed">
+                                Let's create something you'll love for decades.
+                            </p>
+                        </div>
 
-      {/* Right Image */}
-      <div className="md:w-1/2 relative mt-10 md:mt-0">
-        <Image
-          src="/images/fantasy-brown-kitchen-hudson.webp"
-          alt="Modern kitchen with elegant stone countertops"
-          width={600}
-          height={400}
-          className="w-full object-cover"
-        />
-      </div>
+                        {/* Right Image */}
+                        <div className="md:w-1/2 relative mt-10 md:mt-0">
+                            <Image
+                                src="/images/fantasy-brown-kitchen-hudson.webp"
+                                alt="Modern kitchen with elegant stone countertops"
+                                width={600}
+                                height={400}
+                                className="w-full object-cover"
+                            />
+                        </div>
 
-    </div>
-  </div>
-</section>
+                    </div>
+                </div>
+            </section>
+
+            <FaqComponent nycFaqs={faqs} />
 
 
         </div>
