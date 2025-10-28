@@ -217,7 +217,7 @@ export default function ServiceAreaPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                  <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Marble: Luxury That Makes a Statement</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
                                         Perfect for bathroom vanities where you want that spa-like feeling, decorative islands that become conversation pieces, or baking stations where marble's naturally cool surface is a genuine advantage. Yes, marble requires more care than granite—it can etch from acidic liquids, it needs periodic sealing. But marble owners consistently tell us, "I knew what I was getting into, and I'd choose it again without hesitation."</p>
@@ -226,7 +226,7 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
 
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Quartzite: Nature's Most Durable Stone</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
@@ -235,7 +235,7 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative ">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
 
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Soapstone: The Timeless Alternative</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
@@ -245,7 +245,7 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative ">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
 
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Limestone, Travertine, and More</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
@@ -381,7 +381,7 @@ export default function ServiceAreaPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
                             {/* Step 1 */}
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">1</span>
                                     </div>
@@ -402,7 +402,7 @@ export default function ServiceAreaPage() {
 
                             {/* Step 2 */}
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">2</span>
                                     </div>
@@ -420,7 +420,7 @@ export default function ServiceAreaPage() {
 
                             {/* Step 3 */}
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">3</span>
                                     </div>

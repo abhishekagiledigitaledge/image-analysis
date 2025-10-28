@@ -324,7 +324,7 @@ export default function ServiceAreaPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">1</span>
                                     </div>
@@ -354,7 +354,7 @@ export default function ServiceAreaPage() {
 
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">2</span>
                                     </div>
@@ -370,7 +370,7 @@ export default function ServiceAreaPage() {
 
 
                             <div className="relative ">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">3</span>
                                     </div>
