@@ -198,12 +198,12 @@ export default function ServiceAreaPage() {
 
                 <section className="pb-16">
                     <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                        <h3 className="text-4xl font-bold text-gray-900 mb-8 text-center">Which Stone Is Right for Your Space?</h3>
+                        <h3 className="text-3xl font-bold text-gray-900 mb-8 text-center">Which Stone Is Right for Your Space?</h3>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Marble Countertops: The Luxury Choice</h3>
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Marble Countertops: The Luxury Choice</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
                                         Best for: Bathroom vanities, decorative islands, baking stations, low-traffic kitchens <br />
                                         Last month, we installed Carrara marble in a Berlin bathroom. The homeowner called it "the most
@@ -217,9 +217,9 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                  <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
 
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Quartzite Countertops: The Workhorse</h3>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Quartzite Countertops: The Workhorse</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
                                         Best for: High-traffic kitchens, busy family homes, outdoor cooking areas. <br />
                                         Think of quartzite as granite's tougher older brother. It has the natural beauty of stone
@@ -232,9 +232,9 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative ">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                  <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
 
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Engineered Stone (Quartz) Countertops: The Modern Solution</h3>
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Engineered Stone (Quartz) Countertops: The Modern Solution</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
                                         Best for: Contemporary kitchens, commercial spaces, high-use family areas <br />
                                         Engineered quartz gives you consistent color and pattern (no surprises), non-porous surfaces that
@@ -267,7 +267,7 @@ export default function ServiceAreaPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">1</span>
                                     </div>
@@ -297,7 +297,7 @@ export default function ServiceAreaPage() {
 
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">2</span>
                                     </div>
@@ -311,7 +311,7 @@ export default function ServiceAreaPage() {
 
 
                             <div className="relative ">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                               <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">3</span>
                                     </div>
