@@ -206,7 +206,7 @@ export default function ServiceAreaPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                  <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Marble: The Luxury Statement</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
                                         Perfect for bathroom vanities, decorative islands, or spaces where beauty trumps heavy-duty use. Marble offers that luminous finish and sophisticated veining that no other stone replicates. Yes, it requires more care than granite. But marble owners consistently tell us, "I'd make the same choice again in a heartbeat."
@@ -216,7 +216,7 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
 
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Quartzite: Nature's Workhorse</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
@@ -225,7 +225,7 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative ">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
 
                                     <h3 className="text-2xl font-bold text-gray-900 mb-4 text-center">Soapstone: The Understated Classic</h3>
                                     <p className="text-gray-600 leading-relaxed mb-4">
@@ -325,7 +325,7 @@ export default function ServiceAreaPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-4">
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className=" flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">1</span>
                                     </div>
@@ -337,7 +337,7 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">2</span>
                                     </div>
@@ -348,7 +348,7 @@ export default function ServiceAreaPage() {
                             </div>
 
                             <div className="relative ">
-                                <div className="bg-gray-300 p-8 h-full border border-gray-100 ">
+                                 <div className="bg-gray-100 p-8 h-full border border-gray-400 ">
                                     <div className="flex items-center justify-center w-16 h-16 bg-black rounded-full mb-6 mx-auto">
                                         <span className="text-2xl font-bold text-white">3</span>
                                     </div>
